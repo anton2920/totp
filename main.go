@@ -37,5 +37,5 @@ func main() {
 	hash := mac[offset : offset+4]
 	result := (binary.BigEndian.Uint32(hash) & 0x7FFFFFFF) % 1000000
 
-	fmt.Println(result)
+	fmt.Printf("%6d\n", result)
 }
